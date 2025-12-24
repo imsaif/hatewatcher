@@ -1,0 +1,10 @@
+{
+  "project": {
+    "name": "HateWatch",
+    "description": "Hate speech intelligence platform for monitoring Telegram channels"
+  },
+  "skills": {
+    "enabled": true,
+    "file": "skills.md"
+  }
+}

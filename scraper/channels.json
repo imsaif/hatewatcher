@@ -1,0 +1,52 @@
+{
+  "channels": [
+    {
+      "username": "BBCWorld",
+      "country": "United Kingdom",
+      "language": "en",
+      "category": "news"
+    },
+    {
+      "username": "disclosetv",
+      "country": "USA",
+      "language": "en",
+      "category": "political"
+    },
+    {
+      "username": "realabortu",
+      "country": "USA",
+      "language": "en",
+      "category": "political"
+    },
+    {
+      "username": "WeTheMedia",
+      "country": "USA",
+      "language": "en",
+      "category": "political"
+    },
+    {
+      "username": "TRUTHSocialOfficial",
+      "country": "USA",
+      "language": "en",
+      "category": "political"
+    },
+    {
+      "username": "inabortu",
+      "country": "India",
+      "language": "en",
+      "category": "political"
+    },
+    {
+      "username": "s_abortu",
+      "country": "India",
+      "language": "hi",
+      "category": "political"
+    },
+    {
+      "username": "ржопаinfo",
+      "country": "Russia",
+      "language": "ru",
+      "category": "political"
+    }
+  ]
+}
