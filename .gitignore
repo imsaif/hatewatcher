@@ -26,3 +26,4 @@ __pycache__/
 # Dashboard
 dashboard/node_modules/
 dashboard/build/
+.vercel
