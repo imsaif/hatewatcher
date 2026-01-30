@@ -70,6 +70,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [refreshHover, setRefreshHover] = useState(false);
+  const [lastUpdated, setLastUpdated] = useState(null);
 
   const fetchData = useCallback(async () => {
     try {
@@ -82,6 +83,7 @@ function App() {
       setStats(statsData);
       setAlerts(alertsData);
       setTimeline(timelineData.timeline || []);
+      setLastUpdated(new Date());
     } catch (err) {
       console.error('Error fetching data:', err);
       setError('Failed to fetch data. Make sure the API server is running.');
@@ -158,6 +160,11 @@ function App() {
       <AlertFeed alerts={alerts} />
 
       <footer style={styles.footer}>
+        {lastUpdated && (
+          <div style={{ marginBottom: '8px' }}>
+            Last updated: {lastUpdated.toLocaleString()}
+          </div>
+        )}
         HateWatch MVP | Data updates every 60 seconds
       </footer>
     </div>
