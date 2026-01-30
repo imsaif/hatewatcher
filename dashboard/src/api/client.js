@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const API_BASE = process.env.REACT_APP_API_URL || '/api';
+// In production, use the full API URL; in development, use proxy
+const API_BASE = process.env.REACT_APP_API_URL
+  ? `${process.env.REACT_APP_API_URL}/api`
+  : '/api';
 
 const client = axios.create({
   baseURL: API_BASE,
